@@ -10,6 +10,7 @@ import { ListinhaListComponent } from './components/listinha-list/listinha-list.
 //Pages
 import { HomeComponent } from './pages/home/home.component';
 import { FormsModule } from '@angular/forms';
+import { ListinhaLuzComponent } from './components/listinha-luz/listinha-luz.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { FormsModule } from '@angular/forms';
     ListinhaInputAddItemsComponent,
     ListinhaListComponent,
     HomeComponent,
+    ListinhaLuzComponent,
   ],
 
   imports: [CommonModule, FormsModule],

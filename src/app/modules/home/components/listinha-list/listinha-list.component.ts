@@ -10,6 +10,7 @@ export class ListinhaListComponent implements DoCheck {
   public taskList: Array<TaskList> = JSON.parse(
     localStorage.getItem('list') || '[]'
   );
+  public light: boolean = true;
 
   ngDoCheck(): void {
     this.setLocalStorage();
@@ -45,5 +46,9 @@ export class ListinhaListComponent implements DoCheck {
       );
       localStorage.setItem('list', JSON.stringify(this.taskList));
     }
+  }
+
+  public changeLight() {
+    document.body.classList.toggle('dark-theme');
   }
 }
